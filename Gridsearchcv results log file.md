@@ -1,3 +1,7 @@
+# Best parameter ranking
+As the logfile shows, a batch size of 2500 with 3500 epochs and learning rate of 0,007 obtained the best mean test score. For the final ann, these parameters will be tested and finely tuned until a sactisfactory R² and minimal loss is reached.
+
+```
      params                                                                                        rank_test_score    mean_test_score    mean_train_score    std_test_score
 ---  ------------------------------------------------------------------------------------------  -----------------  -----------------  ------------------  ----------------
 119  {'Optimizer_trial': 'adam', 'batch_size': 2500, 'epochs': 3500, 'learning_rate': 0.007}                     1         0.692305             0.760866          0.0694685
@@ -210,3 +214,4 @@
 199  {'Optimizer_trial': 'adam', 'batch_size': 3500, 'epochs': 4500, 'learning_rate': 0.007}                   208        -0.991895            -0.677057          1.37712
 144  {'Optimizer_trial': 'adam', 'batch_size': 3000, 'epochs': 2500, 'learning_rate': 0.007}                   209        -1.00464             -0.690892          1.36351
 126  {'Optimizer_trial': 'adam', 'batch_size': 2500, 'epochs': 4500, 'learning_rate': 0.001}                   210        -1.27484             -1.27981           0.851311
+```
