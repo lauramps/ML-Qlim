@@ -1,3 +1,8 @@
+# Running the ann with final defined parameters
+## Changes from first setup
+For this part, the model ran a few times for the parameters chosen by gridsearchcv, while slowly tuning the parameters and layer sizes until a sactisfactory R² value was reached. 7 input layers and 1 output layer were used, with 10500 epochs and a batch size of 3000. A log file with the information for the interactions and accuracy values was generated at the end.
+
+```
 ########### Importing modules
 import numpy as np
 import pandas as pd
@@ -99,3 +104,4 @@ sys.stdout = old_stdout
 log_file.close()
 
 print('\n\nFinished! Check log file.')
+```
